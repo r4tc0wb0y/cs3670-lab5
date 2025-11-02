@@ -14,7 +14,18 @@ You should see a result like:
 ctf{sample_flag_for_testing}  ->  sample_data/demo.txt:1
 ```
 
+## Run tests (optional)
+```bash
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install pytest
+pytest -q
+```
+
 ## Files
 - `flag_finder.py` — CLI tool
+- `tests/test_flag_finder.py` — minimal pytest
+- `sample_data/` — includes a demo file with a test flag
 - `.gitignore`, `LICENSE`
 
+## License
+MIT
